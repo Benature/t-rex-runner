@@ -88,6 +88,8 @@
 
     /** @const */
     var IS_HIDPI = window.devicePixelRatio > 1;
+    var IS_HIDPI = true;
+    // console.log(IS_HIDPI)
 
     /** @const */
     var IS_IOS = /iPad|iPhone|iPod/.test(window.navigator.platform);
@@ -467,7 +469,7 @@
                     'from { width:' + Trex.config.WIDTH + 'px }' +
                     'to { width: ' + this.dimensions.WIDTH + 'px }' +
                     '}';
-                
+
                 // create a style sheet to put the keyframe rule in 
                 // and then place the style sheet in the html head    
                 var sheet = document.createElement('style');
@@ -2134,7 +2136,7 @@
      * @enum {number}
      */
     Cloud.config = {
-        HEIGHT: 14,
+        HEIGHT: 24,
         MAX_CLOUD_GAP: 400,
         MAX_SKY_LEVEL: 30,
         MIN_CLOUD_GAP: 100,
